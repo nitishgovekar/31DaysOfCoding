@@ -19,7 +19,7 @@ public class NumbersStartingWith1 {
 	
 		numericList.stream().map(number->number+ " ")//Convert Integer to Strings
 		.forEach(System.out::println);
-		//numericList.stream().map(number->number +"").filter(number->number.startsWith("1")).forEach(System.out::println);
+		numericList.stream().map(number->number +"").filter(number->number.startsWith("1")).forEach(System.out::println);
 	}
 	
 
