@@ -17,7 +17,9 @@ public class NumbersStartingWith1 {
 
 		List<Integer> numericList = List.of(10,20,30,50,110);
 	
-		numericList.stream().map(number->number +"").filter(number->number.startsWith("1")).forEach(System.out::println);
+		numericList.stream().map(number->number+ " ")//Convert Integer to Strings
+		.forEach(System.out::println);
+		//numericList.stream().map(number->number +"").filter(number->number.startsWith("1")).forEach(System.out::println);
 	}
 	
 
